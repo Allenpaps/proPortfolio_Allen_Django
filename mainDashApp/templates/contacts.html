@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AD | Portfolio</title>
+    <title>Document</title>
 
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Font+Name&display=swap" rel="stylesheet">
@@ -19,44 +19,41 @@
    
     <div class="flex">
         <nav class="w-3/9 flex flex-col justify-center items-start px-6 py-6 ml-5 font-thin h-screen relative z-10">
-            <div class="nav-burger">
-                <div class="burger-line"></div>
-                <div class="burger-line"></div>
-                <div class="burger-line"></div>
-            </div>
-
+                
             <div class="nav-logo text-white text-2xl">
-                <a href="#"><strong>Allen</strong> | Portfolio</a>
+                <a href="{% url 'baseView' %}"><strong>Allen</strong> | Portfolio</a>
             </div>
         
             <div class="nav-options text-white bg-white-100 mt-4">
-                <a href="{% url 'baseView' %}" class="block py-2 px-2 bg-white text-black">Home</a>
-                <a href="{% url 'about' %}"  class="block py-2 px-2 transition duration-400 ease-in-out delay-70 hover:bg-gradient-to-r from-transparent to-white hover:bg-white hover:text-black active:bg-gray-500 focus:bg-white focus:text-black">About me</a>
-                <a href="{% url 'contacts' %}" class="block py-2 px-2 transition duration-400 ease-in-out delay-70 hover:bg-gradient-to-r from-transparent to-white hover:bg-white hover:text-black active:bg-gray-500 focus:bg-white focus:text-black">Contacts</a>
+                <a href="{% url 'baseView' %}" class="block py-2 px-2 transition duration-400 ease-in-out delay-70 hover:bg-gradient-to-r from-transparent to-white hover:bg-white hover:text-black active:bg-gray-500 focus:bg-white focus:text-black">Home</a>
+                <a href="{% url 'about' %}" class="block py-2 px-2 transition duration-400 ease-in-out delay-70 hover:bg-gradient-to-r from-transparent to-white hover:bg-white hover:text-black active:bg-gray-500 focus:bg-white focus:text-black">About me</a>
+                <a href="{% url 'contacts' %}" class="block py-2 px-2 bg-white text-black">Contacts</a>
             </div>
         </nav>
 
-        <div class="absolute top-0 right-0 h-screen w-1/2 bg-cover bg-no-repeat bg-right mr-20 background-image" style="background-image: url('/static/images/dashAppImage2.png');"></div>
-    
+       <div id="content-section" class="flex">
+       
         <div class="absolute top-0 left-0 h-screen w-1/2 flex flex-col justify-center items-start px-6 py-6 pl-96">
             <div class="space-y-5">
-                <span class="block text-white text-4xl font-jost">I'm Allen!</span>
+                <span class="block text-white text-4xl font-jost">I'm Bona!</span>
                 <span class="block justify-start text-base font-thin text-white">An aspiring software engineer with a passion for creating innovative and efficient solutions. Through this portfolio, I invite you to explore my profile and discover more about my skills and experiences in the dynamic field of software development. Whether you're an employer, colleague, or fellow enthusiast, I hope you find inspiration and insight into my experiences. Feel free to connect with me and let's collaborate on exciting ventures together.</span>
     
-                <div class="space-x-6">
-                    <div class="inline-block text-white text-xl mt-8"><a href="/static/resumeAllen.docx" download class="border border-white py-2 px-2 transition duration-600 ease-in-out delay-120 hover:bg-gradient-to-r from-transparent to-white hover:bg-white hover:text-black active:bg-gray-500 focus:bg-white focus:text-black">Download CV</a></div>
-                    <div class="inline-block text-white text-xl"><a href="{% url 'about' %}" class="border border-white py-2 px-2 transition duration-600 ease-in-out delay-120 hover:bg-gradient-to-r from-transparent to-white hover:bg-white hover:text-black active:bg-gray-500 focus:bg-white focus:text-black">Discover More</a></div>
-                </div>
+
             </div>
         </div>
     </div>    
 
+
+</div> 
     <footer class="fixed bottom-0 left-0 right-0 px-6 py-6 text-white text-xl text-center">
         <div class="flex items-center justify-center space-x-7">
           <div><a href="#"><img src="/static/images/fbIconn.png" alt="Facebook" class="w-10 h-10 transform hover:scale-125"></a></div>
           <div><a href="#"><img src="/static/images/discIconn.png" alt="Discord" class="w-10 h-10 transform hover:scale-125"></a></div>
           <div><a href="#"><img src="/static/images/gmailIconn.png" alt="Gmail" target="_blank" class="w-10 h-10 transform hover:scale-125"></a></div>
         </div>
-    </footer>
+      </footer>
+      
+      
+    
 </body>
 </html>

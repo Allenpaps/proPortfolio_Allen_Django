@@ -2,3 +2,41 @@
     font-family: "Font Name", jost;
   }
 
+@media (max-width: 767px) {
+  .nav-options {
+      display: none;
+      background-color: #ffffff;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      padding: 10px;
+  }
+
+  .nav-options a {
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+      display: none;
+  }
+
+  .nav-burger {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px;
+      cursor: pointer;
+  }
+
+  .nav-burger.open + .nav-options {
+      display: block;
+  }
+
+  .nav-logo {
+      display: none;
+  }
+
+  /* Hide the image */
+  .background-image {
+      display: none;
+  }
+}
