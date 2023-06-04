@@ -8,3 +8,6 @@ def aboutView(request):
 
 def contactView(request):
     return render(request, 'contacts.html')
+
+def historyView(request):
+    return render(request, 'history.html')

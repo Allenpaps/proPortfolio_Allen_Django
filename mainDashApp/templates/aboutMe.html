@@ -16,48 +16,55 @@
   
 
 </head>
-<body class="bg-gradient-to-r from-black via-gray-900 to-black text-white overflow-hidden">
+<body class="bg-gradient-to-r from-black via-gray-900 to-black text-white overflow-hidden items-start">
    
     <div class="flex">
         <nav class="w-3/9 flex flex-col justify-center items-start px-6 py-6 ml-5 font-thin h-screen relative z-10">
                 
             <div class="nav-logo text-white text-2xl">
-                <a href="{% url 'baseView' %}"><strong>Allen</strong> | Portfolio</a>
+                <a href="{% url 'baseView' %}"><strong>AD</strong> | Portfolio</a>
             </div>
         
-            <div class="nav-options text-white bg-white-100 mt-4">
-                <a href="{% url 'baseView' %}" class="block py-2 px-2 transition duration-400 ease-in-out delay-70 hover:bg-gradient-to-r from-transparent to-white hover:bg-white hover:text-black active:bg-gray-500 focus:bg-white focus:text-black">Home</a>
-                <a href="{% url 'about' %}" class="block py-2 px-2 bg-white text-black">About me</a>
+            <div class="nav-options text-white bg-white-100 mt-4 pr-16">
+                <a href="{% url 'baseView' %}" class="block py-2 px-2  transition duration-400 ease-in-out delay-70 hover:bg-gradient-to-r from-transparent to-white hover:bg-white hover:text-black active:bg-gray-500 focus:bg-white focus:text-black">Home</a>
+                <a href="{% url 'about' %}" class="block py-2 px-2 bg-white text-black">About</a>
+                <a href="{% url 'history' %}"  class="block py-2 px-2 transition duration-400 ease-in-out delay-70 hover:bg-gradient-to-r from-transparent to-white hover:bg-white hover:text-black active:bg-gray-500 focus:bg-white focus:text-black">History</a>
                 <a href="{% url 'contacts' %}" class="block py-2 px-2 transition duration-400 ease-in-out delay-70 hover:bg-gradient-to-r from-transparent to-white hover:bg-white hover:text-black active:bg-gray-500 focus:bg-white focus:text-black">Contacts</a>
             </div>
         </nav>
 
         <div class="block">
 
-            <div class="block">
-                <h1 class="font-jost text-2xl ml-72 text-white pt-10 mt-2 border-b">About me</h1>
+            <div class="block pl-52 pr-44">
+                <h1 class="font-jost text-2xl text-white pt-10 mt-2 pb-1 border-b">About me</h1>
+                <p class="font-thin mt-2 text-base">As an IT enthusiast with a passion for programming, I bring more than 3 years of valuable Customer Service experience to the table. I have honed my time management skills and have proven my ability to excel both independently and as a valuable team member. Having worked in the dynamic BPO industry, I had the privilege of not only serving customers but also becoming a mentor and Subject Matter Expert (SME) for the account I handled. This role allowed me to share my knowledge and transfer my skills to colleagues and newly hired employees, fostering a collaborative and growth-oriented work environment.<br><br>
+                My true passion lies in the IT field, particularly in programming. During my college years and leisure time, I dedicated myself to self-studying various programming languages, with a strong focus on Python. This dedication reflects my long-term goal of pursuing a fulfilling career in the programming field. I am eager to leverage my skills, experiences, and self-driven expertise to contribute to exciting projects and make a significant impact in the world of technology.
+                </p>
             </div>
 
             <div class="personalTab inline-block">
-                <h1 class="font-jost text-2xl ml-72 text-white pt-20 mt-20">Personal</h1>
-                <ul class="text-white font-thin ml-72 pl-3 border-t pt-3 pb-3">
+                <h1 class="font-jost text-2xl ml-52 text-white pt-2 mt-2">Personal</h1>
+                <ul class="text-white font-thin ml-52 pl-3 border-t pt-3 pb-3">
                     <li><strong>Full Name: </strong>Allen Dale Bonachita</li>
                     <li><strong>Address: </strong>GA5 Bldg. 1 GSIS Metrohomes Sta. Mesa Manila</li>
                     <li><strong>Birthday: </strong>November 17, 1999</li>
-                    <li><strong>Age: </strong>23 Years Old</li>
+                    <li><strong>Languages: </strong>English, Filipino</li>
+                    <li><strong>Hobbies: </strong>Photography, Coding, Gaming, Playing Instruments</li>
                 </ul>
     
-                <h1 class="font-jost text-2xl ml-72 text-white pt-20">Personal</h1>
-                <ul class="text-white font-thin ml-72 pl-3 border-t pt-3 pb-3">
-                    <li><strong>Full Name: </strong>Allen Dale Bonachita</li>
-                    <li><strong>Address: </strong>GA5 Bldg. 1 GSIS Metrohomes Sta. Mesa Manila</li>
-                    <li><strong>Age: </strong>23 Years Old</li>
-                </ul>
+                <h1 class="font-jost text-2xl ml-52 text-white pt-10">Certifications</h1>
+                <ul class="text-white font-thin ml-52 pl-3 border-t pt-3 pb-3">
+                    <li><strong>2019</strong> - ACE Training (Accelerated Career Experience)</li>
+                    <li><strong>2022</strong> - PRIDE Leadership Training</li>
+                </ul><br>
+
+                <div class="inline-block text-white text-xl mt-8 ml-52"><a href="{% url 'history' %}" class="border border-white py-2 px-2 transition duration-600 ease-in-out delay-120 hover:bg-gradient-to-r from-transparent to-white hover:bg-white hover:text-black active:bg-gray-500 focus:bg-white focus:text-black">View my history</a></div><br><br><br>
+
             </div>
 
             <div class="skillSet inline-block">
-                <h1 class="font-jost text-2xl ml-44 text-white pt-20 pr-80 mt-20">Skill Sets</h1>
-                <ul class="text-white font-semibold ml-44 pl-3 border-t pt-3 pb-3">
+                <h1 class="font-jost text-2xl ml-60 text-white pt-2 pr-80 mt-5">Skill Sets</h1>
+                <ul class="text-white font-semibold ml-60 pl-3 border-t pt-3 pb-3">
                     <li class="pb-3"><i class="fa-solid fa-phone fa-xl pr-5"></i><span class="pl-64 bg-white text-black p-1.5">Customer Service </span><div class="inline-block pl-5 font-semibold">8/10</div></li>
                     <li class="pb-3"><i class="fa-brands fa-python fa-lg pr-6"></i><span class="pl-20 bg-white text-black p-1.5 m-1">Python(DJango+Tkinter) </span><div class="inline-block pl-5 font-semibold">5/10</div></li>
                     <li class="pb-3"><i class="fa-solid fa-file-code fa-lg pr-5 pl-1"></i><span class="pl-44 bg-white text-black p-1.5 m-1.5">HTML+CSS  </span><div class="inline-block pl-5 font-semibold">5/10</div></li>
@@ -73,13 +80,8 @@
                     <li class="pb-3"><i class="fa-solid fa-business-time fa-lg pr-5"></i></i><span class="pl-60 bg-white text-black p-1.5 m-0">       Time Management</span><div class="inline-block pl-9 font-semibold">8/10</div></li>
                 </ul>
             </div>
-        </div>
-
-      
+        </div> 
     </div>    
-
-
-
 
 </div> 
     <footer class="fixed bottom-0 left-0 right-0 px-6 py-6 text-white text-xl text-center">

@@ -8,6 +8,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.baseView, name='baseView'),
     path('aboutMe/', views.aboutView, name='about'),
+    path('history/', views.historyView, name='history'),
     path('contacts/', views.contactView, name='contacts'),
 ]
 
