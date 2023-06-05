@@ -5,3 +5,4 @@ navBurger.addEventListener('click', () => {
     navBurger.classList.toggle('open');
     navOptions.classList.toggle('show');
 });
+  

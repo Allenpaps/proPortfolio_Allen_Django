@@ -58,7 +58,11 @@
                     <li><strong>2022</strong> - PRIDE Leadership Training</li>
                 </ul><br>
 
-                <div class="inline-block text-white text-xl mt-8 ml-52"><a href="{% url 'history' %}" class="border border-white py-2 px-2 transition duration-600 ease-in-out delay-120 hover:bg-gradient-to-r from-transparent to-white hover:bg-white hover:text-black active:bg-gray-500 focus:bg-white focus:text-black">View my history</a></div><br><br><br>
+                <div class="inline-block text-white text-xl mt-8 ml-52 relative">
+                    <a href="{% url 'history' %}" class="border border-white py-2 px-2 transition duration-600 ease-in-out delay-120 hover:bg-gradient-to-r from-transparent to-white hover:bg-white hover:text-black active:bg-gray-500 focus:bg-white focus:text-black relative">
+                      View my history
+                      <span class="animate-ping absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 bg-white rounded-full w-2 h-2"></span>
+                    </a></div><br><br><br>
 
             </div>
 
@@ -66,9 +70,9 @@
                 <h1 class="font-jost text-2xl ml-60 text-white pt-2 pr-80 mt-5">Skill Sets</h1>
                 <ul class="text-white font-semibold ml-60 pl-3 border-t pt-3 pb-3">
                     <li class="pb-3"><i class="fa-solid fa-phone fa-xl pr-5"></i><span class="pl-64 bg-white text-black p-1.5">Customer Service </span><div class="inline-block pl-5 font-semibold">8/10</div></li>
-                    <li class="pb-3"><i class="fa-brands fa-python fa-lg pr-6"></i><span class="pl-20 bg-white text-black p-1.5 m-1">Python(DJango+Tkinter) </span><div class="inline-block pl-5 font-semibold">5/10</div></li>
-                    <li class="pb-3"><i class="fa-solid fa-file-code fa-lg pr-5 pl-1"></i><span class="pl-44 bg-white text-black p-1.5 m-1.5">HTML+CSS  </span><div class="inline-block pl-5 font-semibold">5/10</div></li>
-                    <li class="pb-3"><i class="fa-brands fa-java fa-xl pr-5"></i><span class="pl-36 bg-white text-black p-1.5 m-1.5">JAVA </span><div class="inline-block pl-5 font-semibold">4/10</div></li>
+                    <li class="pb-3"><i class="fa-brands fa-python fa-lg pr-6"></i><span class="pl-32 bg-white text-black p-1.5 m-1">Python(DJango+Tkinter)</span><div class="inline-block pl-5 font-semibold">6/10</div></li>
+                    <li class="pb-3"><i class="fa-solid fa-file-code fa-lg pr-5 pl-1"></i><span class="pl-40 bg-white text-black p-1.5 m-1.5">HTML+CSS  </span><div class="inline-block pl-5 font-semibold">5/10</div></li>
+                    <li class="pb-3"><i class="fa-brands fa-java fa-xl pr-5"></i><span class="pl-24 bg-white text-black p-1.5 m-1.5">Github+Git </span><div class="inline-block pl-5 font-semibold">4/10</div></li>
                     <li class="pb-3"><i class="fa-brands fa-php fa-lg pr-5"></i><span class="pl-36 bg-white text-black p-1.5 m-0"> PHP </span><div class="inline-block pl-6 font-semibold">4/10</div></li>
                     <li class="pb-3"><i class="fa-solid fa-c fa-xl pr-5"></i><span class="pl-24 bg-white text-black p-1.5 m-1.5">C Language </span><div class="inline-block pl-5 font-semibold">4/10</div></li>
                     <li class="pb-3"><i class="fa-solid fa-table fa-xl pr-5"></i><span class="pl-20 bg-white text-black p-1.5 m-.5">Tableau</span><div class="inline-block pl-5 font-semibold">3/10</div></li>
@@ -77,21 +81,20 @@
                     <li class="pb-3"><i class="fa-solid fa-chart-simple fa-xl pr-5"></i><span class="pl-80 bg-white text-black p-1.5 m-1">Analytics</span><div class="inline-block pl-5 font-semibold">8/10</div></li>
                     <li class="pb-3"><i class="fa-solid fa-person fa-xl pr-5"></i><span class="pl-44 bg-white text-black p-1.5 m-2.5">Leadership</span><div class="inline-block pl-5 font-semibold">5/10</div></li>
                     <li class="pb-3"><i class="fa-solid fa-bolt-lightning fa-xl pr-5"></i><span class="pl-72 bg-white text-black p-1.5 m-2">Fast Learner </span><div class="inline-block pl-6 font-semibold">8/10</div></li>
-                    <li class="pb-3"><i class="fa-solid fa-business-time fa-lg pr-5"></i></i><span class="pl-60 bg-white text-black p-1.5 m-0">       Time Management</span><div class="inline-block pl-9 font-semibold">8/10</div></li>
+                    <li class="pb-3"><i class="fa-solid fa-business-time fa-lg pr-5"></i></i><span class="pl-60 bg-white text-black p-1.5 m-0">      Time Management</span><div class="inline-block pl-9 font-semibold">8/10</div></li>
                 </ul>
             </div>
         </div> 
     </div>    
 
 </div> 
-    <footer class="fixed bottom-0 left-0 right-0 px-6 py-6 text-white text-xl text-center">
-        <div class="flex items-center justify-center space-x-7">
-          <div><a href="#"><img src="/static/images/fbIconn.png" alt="Facebook" class="w-10 h-10 transform hover:scale-125"></a></div>
-          <div><a href="#"><img src="/static/images/discIconn.png" alt="Discord" class="w-10 h-10 transform hover:scale-125"></a></div>
-          <div><a href="#"><img src="/static/images/gmailIconn.png" alt="Gmail" target="_blank" class="w-10 h-10 transform hover:scale-125"></a></div>
-        </div>
-      </footer>
-      
+<footer class="fixed bottom-0 left-0 right-0 px-6 py-6 text-white text-xl text-center">
+    <div class="flex items-center justify-center space-x-7">
+      <div><a href="https://www.facebook.com/httpsLenn/" target="_blank"><img src="/static/images/fbIconn.png" alt="Facebook" class="w-10 h-10 transform hover:scale-125"></a></div>
+      <div><a href="https://discord.com/users/SeyntTropey#1298" target="_blank" ><img src="/static/images/discIconn.png" alt="Discord" class="w-10 h-10 transform hover:scale-125"></a></div>
+      <div><a href="emailto:Allendalebona@gmail.com"><img src="/static/images/gmailIconn.png" alt="Gmail"  class="w-10 h-10 transform hover:scale-125"></a></div>
+    </div>
+</footer>
       
     
 </body>
